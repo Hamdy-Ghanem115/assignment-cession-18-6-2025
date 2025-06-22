@@ -16,7 +16,7 @@ function renderCompletedTasks() {
         taskCard.innerHTML += `
                         <div class="box-the-task col-12 shadow-lg p-3 mb-5 bg-body-tertiary rounded d-flex justify-content-between">
                     <div class="chek-and-address d-flex justify-content-between align-items-center">
-                        <div class="Task-completion-counter btn me-4 fs-1 " onclick="viewTask(${i})" > 
+                        <div class="Task-completion-check btn me-4 fs-1 " onclick="viewTask(${i})" > 
                             <i class="fas fa-check text-primary"></i>
                         </div>
                             <span class="ms-3 fs-5 fw-bold">${completedTasks[i].address}</span>

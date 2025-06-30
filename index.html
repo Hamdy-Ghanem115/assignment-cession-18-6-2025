@@ -44,20 +44,20 @@
         
         </div>
         
-        <div class="box-add-task row d-flex justify-content-center shadow-lg m-5">
+        <form class="box-add-task row d-flex justify-content-center shadow-lg m-5">
             <div class="col-lg-12 col-md-12 col-sm-12 ">
                 <h2 class="text-center fs-1 fw-bold  ">Add Task</h2>
                 <div class=" form-floating mb-3">
-                    <input type="address" class="task-address form-control" id="address" placeholder="name@example.com">
+                    <input type="text" class="task-address form-control" id="address" placeholder="name@example.com" required>
                     <label class="text-center" for="address">Address The Task</label>
                 </div>
                 <div class=" form-floating mb-3">
-                    <input type="description" class="task-description form-control" id="description" placeholder="name@example.com">
+                    <input type="text" class="task-description form-control" id="description" placeholder="name@example.com" required>
                     <label for="description">description</label>
                 </div>
-                <button class=" bnt-add-task btn w-100 bnt-add-student mb-3"> Add Task </button>
+                <button type="submit" class=" bnt-add-task btn w-100 bnt-add-student mb-3"> Add Task </button>
             </div>
-        </div>
+        </form>
         <hr>
         <section>
             <div class="task-card row g-3">

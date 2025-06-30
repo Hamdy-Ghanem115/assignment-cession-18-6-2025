@@ -22,10 +22,20 @@ function addTask(e) {
     counterAllTask();
     saveTasksToLocalStorage();
     counterRestTask();
+    ConfirmAdd();
     // console.log(allTasks)
+    
 
 }
-document.querySelector(".bnt-add-task").onclick = addTask;
+document.querySelector("form").addEventListener("submit", addTask);
+
+function ConfirmAdd() {
+    Swal.fire({
+        title: "Task added",
+        icon: "success",
+        draggable: true,
+    });
+}
 
 function renderTask() {
     const taskCard = document.querySelector(".task-card");
